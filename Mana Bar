@@ -1,0 +1,12 @@
+using UnityEngine.UI;
+using CodeMonkey;
+
+
+
+private Mana mana;
+private Image barImage
+private void Awake()
+{
+barImage = transform.Find ("Bar").GetComponent<Image>();
+
+mana = new Mana();
