@@ -1,0 +1,10 @@
+public float Speed;
+//add rigidbody to player
+private RigidBody2D rigidbody;
+
+float Horizontal = Input.GetAxis("Horizontal");
+float Vertical = Input.GetAxis("Vertical");
+rigidbody = GetComponent<Rigidbody2D>();
+
+Vector2 Movement = new Vector2 (Horizontal, Vertical);
+rigidbody.AddForce(Movement*Speed);
